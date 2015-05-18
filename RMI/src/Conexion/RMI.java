@@ -20,4 +20,9 @@ public interface RMI extends Remote{
     List<List<String>> getListaJugadores() throws RemoteException;
     void llenarMazo(int estilo) throws RemoteException;
     void mostrarPrimeras3() throws RemoteException;
+    void mostrarCuarta() throws RemoteException;
+    void mostrarQuinta()throws RemoteException;
+    void siguienteRonda()throws RemoteException;
+    void pasarTurno()throws RemoteException;
+    void apostar(int idJugador,int dinero)throws RemoteException;
 }
