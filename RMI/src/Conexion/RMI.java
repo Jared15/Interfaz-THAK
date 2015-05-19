@@ -25,4 +25,5 @@ public interface RMI extends Remote{
     void siguienteRonda()throws RemoteException;
     void pasarTurno()throws RemoteException;
     void apostar(int idJugador,int dinero)throws RemoteException;
+    void retirarse(int idJugador)throws RemoteException;
 }
