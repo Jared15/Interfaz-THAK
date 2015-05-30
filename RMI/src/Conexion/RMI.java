@@ -36,4 +36,10 @@ public interface RMI extends Remote{
     void actualizarLista()throws RemoteException;
     void registrarDenuncio(String jugador,String motivo,String descripcion)throws RemoteException;
     void bloquearJugador(String nombre)throws RemoteException;
+    String getPass(String nombreUsuario)throws RemoteException;
+    boolean isIniciada()throws RemoteException;
+    void guardarColores(String fondo,int carta,String mesa,String usuario)throws RemoteException;
+    double promedioGanadas()throws RemoteException;
+    List<List<String>> getReportes()throws RemoteException;
+	
 }
